@@ -7,6 +7,7 @@ use std::{
     process::Command,
 };
 
+use anyhow::Context as _;
 use etcetera::AppStrategy as _;
 
 #[cfg(debug_assertions)]
@@ -70,9 +71,13 @@ fn get_games(use_local: bool) -> anyhow::Result<Vec<Game>> {
         && let Ok(response) = reqwest::blocking::get(GAMES_JSON_URL)
         && response.status().is_success()
     {
-        println!("Games list fetched successfully.");
+        println!(
+            "Games list fetched successfully, updating local copy in {}",
+            path.display()
+        );
         let games: Vec<Game> = response.json()?;
-        let mut file = File::create(&path)?;
+        let mut file =
+            File::create(&path).context(format!("Failed to create {}", path.display()))?;
         serde_json::to_writer_pretty(&mut file, &games)?;
         println!("Games list saved to {}", path.display());
         return Ok(games);
