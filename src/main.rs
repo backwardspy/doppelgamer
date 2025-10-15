@@ -14,7 +14,7 @@ const SPOOFER_BIN: &[u8] = include_bytes!("../target/debug/spoofer.exe");
 const SPOOFER_BIN: &[u8] = include_bytes!("../target/release/spoofer.exe");
 
 const GAMES_JSON_URL: &str =
-    "https://raw.githubusercontent.com/backwardspy/doppelgamer/main/games.json";
+    "https://raw.githubusercontent.com/backwardspy/doppelgamer/refs/heads/main/games.json";
 const BUNDLED_GAMES: &str = include_str!("../games.json");
 
 #[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
