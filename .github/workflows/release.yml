@@ -14,6 +14,7 @@ jobs:
       - run: cargo build --release --bin spoofer
       - run: cargo build --release
       - uses: softprops/action-gh-release@v2
+        if: github.ref_type == 'tag'
         with:
           files: target/release/doppelgamer.exe
         env:
