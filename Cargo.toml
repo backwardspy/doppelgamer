@@ -1,0 +1,22 @@
+[package]
+name = "doppelgamer"
+version = "0.1.0"
+edition = "2024"
+default-run = "doppelgamer"
+
+[lints]
+clippy.all = "warn"
+clippy.pedantic = "warn"
+clippy.nursery = "warn"
+clippy.unwrap_used = "warn"
+
+[dependencies]
+anyhow = "1.0.100"
+ctrlc = "3.5.0"
+eframe = "0.33.0"
+etcetera = "0.10.0"
+image = "0.25.8"
+jiff = "0.2.15"
+reqwest = { version = "0.12.24", features = ["json", "blocking"] }
+serde = "1.0.228"
+serde_json = "1.0.145"

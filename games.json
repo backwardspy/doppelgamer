@@ -1,0 +1,57 @@
+[
+  {
+    "display_name": "Starlight Revolver",
+    "path": "Starlight Revolver Demo",
+    "exe_name": "halcyondive.exe"
+  },
+  {
+    "display_name": "FC26",
+    "path": "EA SPORTS FC 26",
+    "exe_name": "FC26.exe"
+  },
+  {
+    "display_name": "Path of Exile 2",
+    "path": "Path of Exile 2",
+    "exe_name": "PathOfExile.exe"
+  },
+  {
+    "display_name": "Perplexity Comet",
+    "path": "Perplexity/Comet/Application",
+    "exe_name": "comet.exe"
+  },
+  {
+    "display_name": "VALORANT",
+    "path": "Riot Games/VALORANT/live/ShooterGame/Binaries/Win64",
+    "exe_name": "VALORANT-Win64-Shipping.exe"
+  },
+  {
+    "display_name": "2XKO",
+    "path": "Riot Games/2XKO/Live/Lion/Binaries/Win64",
+    "exe_name": "Lion-Win64-Shipping.exe"
+  },
+  {
+    "display_name": "Blue Protocol: Star Resonance",
+    "path": "Blue Protocol Star Resonance/bpsr",
+    "exe_name": "BPSR_STEAM.exe"
+  },
+  {
+    "display_name": "Marvel Rivals",
+    "path": "MarvelRivals/MarvelGame/Marvel/Binaries/Win64",
+    "exe_name": "Marvel-Win64-Shipping.exe"
+  },
+  {
+    "display_name": "Battlefield 6",
+    "path": "Battlefield 6",
+    "exe_name": "bf6.exe"
+  },
+  {
+    "display_name": "The Midnight Walkers",
+    "path": "The Midnight Walkers Demo/ProjectMW/Binaries/Win64",
+    "exe_name": "ProjectMW-Win64-Shipping.exe"
+  },
+  {
+    "display_name": "Fortnite",
+    "path": "Fortnite/FortniteGame/Binaries/Win64",
+    "exe_name": "FortniteClient-Win64-Shipping.exe"
+  }
+]
