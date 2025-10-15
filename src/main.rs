@@ -36,7 +36,10 @@ fn strategy() -> anyhow::Result<impl etcetera::AppStrategy> {
 }
 
 fn games_json_path() -> anyhow::Result<PathBuf> {
-    Ok(strategy()?.config_dir().join("games.json"))
+    let mut path = strategy()?.config_dir();
+    fs::create_dir_all(&path)?;
+    path.push("games.json");
+    Ok(path)
 }
 
 fn game_exe_path(game: &Game) -> anyhow::Result<PathBuf> {
