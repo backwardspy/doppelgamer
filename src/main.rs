@@ -1,4 +1,5 @@
 use std::{
+    env,
     fs::{self, File},
     io::{self, BufReader, Write as _},
     os::windows::process::CommandExt as _,
@@ -45,10 +46,10 @@ fn game_exe_path(game: &Game) -> anyhow::Result<PathBuf> {
     Ok(path)
 }
 
-fn get_last_known_games() -> anyhow::Result<Vec<Game>> {
+fn get_last_known_games(use_local: bool) -> anyhow::Result<Vec<Game>> {
     let path = games_json_path()?;
     path.parent().map(fs::create_dir_all).transpose()?;
-    if path.exists() {
+    if !use_local && path.exists() {
         println!("Using existing games.json at {}", path.display());
     } else {
         let mut file = File::create(&path)?;
@@ -61,11 +62,12 @@ fn get_last_known_games() -> anyhow::Result<Vec<Game>> {
     Ok(games)
 }
 
-fn get_games() -> anyhow::Result<Vec<Game>> {
+fn get_games(use_local: bool) -> anyhow::Result<Vec<Game>> {
     let path = games_json_path()?;
 
     println!("Fetching games list...");
-    if let Ok(response) = reqwest::blocking::get(GAMES_JSON_URL)
+    if !use_local
+        && let Ok(response) = reqwest::blocking::get(GAMES_JSON_URL)
         && response.status().is_success()
     {
         println!("Games list fetched successfully.");
@@ -77,7 +79,7 @@ fn get_games() -> anyhow::Result<Vec<Game>> {
     }
 
     println!("Failed to fetch games list, using last known games.");
-    get_last_known_games()
+    get_last_known_games(use_local)
 }
 
 fn main() -> anyhow::Result<()> {
@@ -86,7 +88,8 @@ fn main() -> anyhow::Result<()> {
         std::process::exit(0);
     })?;
 
-    let games = get_games()?;
+    let use_local = env::args().any(|arg| arg == "--local");
+    let games = get_games(use_local)?;
     println!("Available games:\n-----");
     for (i, game) in games.iter().enumerate() {
         println!("{}: {}", i + 1, game.display_name);
@@ -132,14 +135,11 @@ fn main() -> anyhow::Result<()> {
         quit_time.strftime("%Y-%m-%d %H:%M:%S")
     );
 
-    let status = Command::new(&exe_path)
+    Command::new(&exe_path)
         .arg(&selected_game.display_name)
         .arg(duration.to_string())
         .creation_flags(0x0000_0008) // CREATE_NEW_CONSOLE
-        .spawn()
-        .expect("Failed to launch spoofer process")
-        .wait()?;
-    println!("Spoofer process exited with status: {status}");
+        .spawn()?;
 
     println!("Spoofer launched as a detached process. Exiting main program.");
 

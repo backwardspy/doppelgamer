@@ -53,5 +53,10 @@
     "display_name": "Fortnite",
     "path": "Fortnite/FortniteGame/Binaries/Win64",
     "exe_name": "FortniteClient-Win64-Shipping.exe"
+  },
+  {
+    "display_name": "Warframe",
+    "path": "Warframe",
+    "exe_name": "Warframe.exe"
   }
 ]
