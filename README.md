@@ -8,7 +8,7 @@
 
 ## usage
 
-grab [the latest release](https://github.com/backwardspy/doppelgamer/releases/latest/spoofer.exe) and run it
+grab [the latest release](https://github.com/backwardspy/doppelgamer/releases/latest/download/doppelgamer.exe) and run it
 
 ## build
 
