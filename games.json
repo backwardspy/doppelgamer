@@ -58,5 +58,15 @@
     "display_name": "Warframe",
     "path": "Warframe",
     "exe_name": "Warframe.exe"
+  },
+  {
+    "display_name": "Bloons TD 6",
+    "path": "BloonsTD6",
+    "exe_name": "BloonsTD6.exe"
+  },
+  {
+    "display_name": "Warhammer 40,000: Space Marine 2",
+    "path": "Warhammer 40000 Space Marine 2/client_pc/root/bin/pc",
+    "exe_name": "Warhammer 40000 Space Marine 2 - Retail.exe"
   }
 ]
