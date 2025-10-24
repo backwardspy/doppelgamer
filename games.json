@@ -68,5 +68,10 @@
     "display_name": "Warhammer 40,000: Space Marine 2",
     "path": "Warhammer 40000 Space Marine 2/client_pc/root/bin/pc",
     "exe_name": "Warhammer 40000 Space Marine 2 - Retail.exe"
+  },
+  {
+    "display_name": "Plants vs. Zombies: Replanted",
+    "path": "PVZ Replanted",
+    "exe_name": "Replanted.exe"
   }
 ]
