@@ -97,7 +97,9 @@ fn main() -> anyhow::Result<()> {
     })?;
 
     let use_local = env::args().any(|arg| arg == "--local");
-    let games = get_games(use_local)?;
+    let mut games = get_games(use_local)?;
+    games.sort_by(|a, b| a.display_name.cmp(&b.display_name));
+
     println!("Available games:\n-----");
     for (i, game) in games.iter().enumerate() {
         println!("{}: {}", i + 1, game.display_name);
