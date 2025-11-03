@@ -83,5 +83,10 @@
     "display_name": "R.E.P.O",
     "path": "REPO",
     "exe_name": "REPO.exe"
+  },
+  {
+    "display_name": "League of Legends",
+    "path": "Riot Games/League of Legends/Game",
+    "exe_name": "League of Legends.exe"
   }
 ]
