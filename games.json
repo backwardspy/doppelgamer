@@ -88,5 +88,10 @@
     "display_name": "League of Legends",
     "path": "Riot Games/League of Legends/Game",
     "exe_name": "League of Legends.exe"
+  },
+  {
+    "display_name": "Arena Breakout: Infinite",
+    "path": "Arena Breakout Infinite/ABInfinite/Binaries/Win64",
+    "exe_name": "UAGame.exe"
   }
 ]
