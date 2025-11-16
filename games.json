@@ -93,5 +93,10 @@
     "display_name": "Arena Breakout: Infinite",
     "path": "Arena Breakout Infinite/ABInfinite/Binaries/Win64",
     "exe_name": "UAGame.exe"
+  },
+  {
+    "display_name": "Where Winds Meet",
+    "path": "wwm_standard/Engine/Binaries/Win64r",
+    "exe_name": "wwm.exe"
   }
 ]
