@@ -108,5 +108,15 @@
     "display_name": "Risk of Rain 2",
     "path": "Risk of Rain 2",
     "exe_name": "Risk of Rain 2.exe"
+  },
+  {
+    "display_name": "Storm Lancers Demo",
+    "path": "Storm Lancers Demo",
+    "exe_name": "StormLancersDemo.exe"
+  },
+  {
+    "display_name": "Destiny 2",
+    "path": "Destiny 2",
+    "exe_name": "destiny2.exe"
   }
 ]
