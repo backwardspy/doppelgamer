@@ -118,5 +118,10 @@
     "display_name": "Destiny 2",
     "path": "Destiny 2",
     "exe_name": "destiny2.exe"
+  },
+  {
+    "display_name": "Terminull Brigade",
+    "path": "Project Rogueteers/Rogueteers/Rouge/Binaries/Win64",
+    "exe_name": "Rouge-Win64-Shipping.exe"
   }
 ]
