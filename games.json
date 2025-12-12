@@ -123,5 +123,10 @@
     "display_name": "Terminull Brigade",
     "path": "Project Rogueteers/Rogueteers/Rouge/Binaries/Win64",
     "exe_name": "Rouge-Win64-Shipping.exe"
+  },
+  {
+    "display_name": "PRAGMATA SKETCHBOOK - DEMO",
+    "path": "PRAGMATA SKETCHBOOK",
+    "exe_name": "PRAGMATA_SKETCHBOOK.exe"
   }
 ]
