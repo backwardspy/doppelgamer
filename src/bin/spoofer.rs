@@ -55,7 +55,7 @@ fn main() {
         .round(Unit::Second)
         .expect("Rounding failed")
         .saturating_add(duration)
-        .saturating_add(Span::new().seconds(10));
+        .saturating_add(Span::new().seconds(15));
 
     let app = App {
         game_name: game_name.clone(),
