@@ -128,5 +128,15 @@
     "display_name": "PRAGMATA SKETCHBOOK - DEMO",
     "path": "PRAGMATA SKETCHBOOK",
     "exe_name": "PRAGMATA_SKETCHBOOK.exe"
+  },
+  {
+    "display_name": "Blue Archive",
+    "path": "BlueArchive",
+    "exe_name": "BlueArchive.exe"
+  },
+  {
+    "display_name": "Hunt: Showdown",
+    "path": "Hunt Showdown/bin/win_x64",
+    "exe_name": "HuntGame.exe"
   }
 ]
