@@ -138,5 +138,15 @@
     "display_name": "Hunt: Showdown",
     "path": "Hunt Showdown/bin/win_x64",
     "exe_name": "HuntGame.exe"
+  },
+  {
+    "display_name": "Fallout 4",
+    "path": "Fallout 4",
+    "exe_name": "Fallout4.exe"
+  },
+  {
+    "display_name": "Fallout 76",
+    "path": "Fallout 76",
+    "exe_name": "Fallout76.exe"
   }
 ]
