@@ -148,5 +148,10 @@
     "display_name": "Fallout 76",
     "path": "Fallout 76",
     "exe_name": "Fallout76.exe"
+  },
+  {
+    "display_name": "PUBG",
+    "path": "PUBG/TslGame/Binaries/Win64",
+    "exe_name": "TslGame.exe"
   }
 ]
