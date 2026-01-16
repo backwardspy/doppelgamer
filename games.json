@@ -153,5 +153,10 @@
     "display_name": "PUBG",
     "path": "PUBG/TslGame/Binaries/Win64",
     "exe_name": "TslGame.exe"
+  },
+  {
+    "display_name": "Torchlight: Infinite",
+    "path": "win64",
+    "exe_name": "torchlight_infinite.exe"
   }
 ]
