@@ -158,5 +158,10 @@
     "display_name": "Torchlight: Infinite",
     "path": "win64",
     "exe_name": "torchlight_infinite.exe"
+  },
+  {
+    "display_name": "Once Human",
+    "path": "once human",
+    "exe_name": "once_human.exe"
   }
 ]
