@@ -163,5 +163,10 @@
     "display_name": "Once Human",
     "path": "once human",
     "exe_name": "once_human.exe"
+  },
+  {
+    "display_name": "Arknights: Endfield",
+    "path": "game",
+    "exe_name": "endfield.exe"
   }
 ]
