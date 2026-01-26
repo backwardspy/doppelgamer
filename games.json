@@ -166,7 +166,12 @@
   },
   {
     "display_name": "Arknights: Endfield",
-    "path": "game",
+    "path": "arknightsendfield",
     "exe_name": "endfield.exe"
+  },
+  {
+    "display_name": "Highguard",
+    "path": "highguard",
+    "exe_name": "highguardclient-win64-shipping.exe"
   }
 ]
