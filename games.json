@@ -173,5 +173,20 @@
     "display_name": "Highguard",
     "path": "highguard",
     "exe_name": "highguardclient-win64-shipping.exe"
+  },
+  {
+    "display_name": "Grounded 2",
+    "path": "wingdk",
+    "exe_name": "grounded2-wingdk-shipping.exe"
+  },
+  {
+    "display_name": "Summoner's War",
+    "path": "summoners war",
+    "exe_name": "summonerswar.exe"
+  },
+  {
+    "display_name": "World of Warcraft",
+    "path": "_retail_",
+    "exe_name": "wow-64.exe"
   }
 ]
