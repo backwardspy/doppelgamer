@@ -907,7 +907,7 @@ dependencies = [
 
 [[package]]
 name = "doppelgamer"
-version = "0.7.1"
+version = "1.0.1"
 dependencies = [
  "anyhow",
  "etcetera",

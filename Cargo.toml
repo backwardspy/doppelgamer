@@ -1,6 +1,6 @@
 [package]
 name = "doppelgamer"
-version = "0.7.1"
+version = "1.0.1"
 edition = "2024"
 default-run = "doppelgamer"
 
@@ -24,3 +24,9 @@ clippy.all = "warn"
 clippy.nursery = "warn"
 clippy.pedantic = "warn"
 clippy.unwrap_used = "warn"
+
+[profile.release]
+strip = true
+lto = true
+panic = "abort"
+codegen-units = 1

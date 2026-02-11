@@ -1,3 +1,4 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 use std::fs::{self, File};
 use std::io::Write as _;
 use std::os::windows::process::CommandExt as _;
