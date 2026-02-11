@@ -49,5 +49,5 @@ for game in detectable:
             }
         )
 
-with Path("games.json").open("w", encoding="utf-8") as f:
+with Path("games.v2.json").open("w", encoding="utf-8") as f:
     json.dump(games, f, ensure_ascii=False)
