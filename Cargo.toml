@@ -6,13 +6,12 @@ default-run = "doppelgamer"
 
 [dependencies]
 anyhow = "1.0.100"
-ctrlc = "3.5.1"
 etcetera = "0.11.0"
 iced = { version = "0.14.0", features = ["image", "tokio"] }
 iced_aw = "0.13.0"
 jiff = "0.2.18"
 nucleo = "0.5.0"
-reqwest = { version = "0.13.1", features = ["blocking", "json"] }
+reqwest = { version = "0.13.1", features = ["json"] }
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.149"
 tokio = { version = "1.49.0", features = ["rt"] }
