@@ -357,7 +357,7 @@ impl App {
                     MatcherCommand::Search(query) => Some(query),
                     MatcherCommand::ReloadGames(_) => None,
                 };
-                while let Ok(Some(newer)) = rx.try_next() {
+                while let Ok(newer) = rx.try_recv() {
                     match newer {
                         MatcherCommand::ReloadGames(games) => reload_games = Some(games),
                         MatcherCommand::Search(query) => latest_search = Some(query),

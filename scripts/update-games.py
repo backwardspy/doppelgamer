@@ -19,6 +19,9 @@ HEADERS = {
     "Upgrade-Insecure-Requests": "1",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0",
 }
+EXTRA_GAMES = [
+    {"name": "Opera GX", "exe": "Opera GX/opera.exe"},
+]
 
 badwords = [
     line.strip().lower()
@@ -62,6 +65,18 @@ for game in detectable:
         )
 
 print(f"filtered {filtered} games via badwords list")
+
+existing_exes = {g["exe"] for g in games}
+extra_added = 0
+for g in EXTRA_GAMES:
+    if g["exe"] not in existing_exes:
+        games.append(g)
+        existing_exes.add(g["exe"])
+        extra_added += 1
+    else:
+        print(f"warn: extra game {g['name']} is already in the list, skipping")
+print(f"added {extra_added} extra games")
+
 
 with Path("games.v2.json").open("w", encoding="utf-8") as f:
     json.dump(games, f, ensure_ascii=False)
