@@ -22,6 +22,7 @@ HEADERS = {
 EXTRA_GAMES = [
     {"name": "Opera GX", "exe": "Opera GX/opera.exe"},
     {"name": "GearUP", "exe": "GearUP/9257/gearup_booster.exe"},
+    {"name": "Firefox", "exe": "Mozilla Firefox/firefox.exe"},
 ]
 
 badwords = [
